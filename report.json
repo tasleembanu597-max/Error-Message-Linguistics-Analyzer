@@ -1,0 +1,82 @@
+{
+  "scan_metadata": {
+    "target_url": "http://localhost",
+    "timestamp": "2026-09-22T15:34:05.123310+00:00",
+    "duration_seconds": 0.035,
+    "emla_version": "0.1.0",
+    "configuration": {
+      "max_depth": 3,
+      "max_pages": 50,
+      "single_url": true,
+      "timeout": 5.0
+    }
+  },
+  "summary": {
+    "overall_score": 18.29,
+    "overall_severity_rating": "MEDIUM",
+    "total_endpoints_scanned": 1,
+    "total_findings_count": 4,
+    "severity_breakdown": {
+      "CRITICAL": 0,
+      "HIGH": 2,
+      "MEDIUM": 0,
+      "LOW": 2,
+      "INFO": 0
+    },
+    "category_breakdown": {
+      "STACK_TRACE": 0,
+      "FILESYSTEM_PATH": 2,
+      "DATABASE_ERROR": 0,
+      "FRAMEWORK_VERSION": 0,
+      "RUNTIME_SERVER": 2
+    }
+  },
+  "endpoints": [
+    {
+      "url": "http://localhost",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 18.29,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 2,
+        "LOW": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/var/www/html/index.html",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "RUNTIME_SERVER",
+          "severity": "LOW",
+          "title": "Detailed Server Header Disclosed",
+          "detail": "The 'Server' header exposes specific server version information. (Value: Apache/2.4.68 (Debian))",
+          "snippet": "server: Apache/2.4.68 (Debian)",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/var/www/html/index.html",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "RUNTIME_SERVER",
+          "severity": "LOW",
+          "title": "Detailed Server Header Disclosed",
+          "detail": "The 'Server' header exposes specific server version information. (Value: Apache/2.4.68 (Debian))",
+          "snippet": "server: Apache/2.4.68 (Debian)",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 18.29, Average Score: 18.29. Aggregated Formula: (0.70 * 18.29) + (0.30 * 18.29) = 18.29. Rating: MEDIUM"
+    }
+  ]
+}
