@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: emla
+Version: 0.1.0
+Summary: Error Message Linguistics Analyzer (EMLA) - Security Analysis & Information Leakage Scoring Tool
+Author: EMLA Security Team
+Requires-Python: >=3.8
+Requires-Dist: requests>=2.31.0
+Requires-Dist: beautifulsoup4>=4.12.0
+Requires-Dist: rich>=13.0.0
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

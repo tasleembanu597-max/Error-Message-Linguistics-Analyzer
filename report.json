@@ -1,0 +1,65 @@
+{
+  "scan_metadata": {
+    "target_url": "http://example.com",
+    "timestamp": "2026-09-30T14:53:50.454319+00:00",
+    "duration_seconds": 0.163,
+    "emla_version": "0.1.0",
+    "configuration": {
+      "max_depth": 3,
+      "max_pages": 50,
+      "single_url": false,
+      "timeout": 5.0
+    }
+  },
+  "summary": {
+    "overall_score": 3.0,
+    "overall_severity_rating": "LOW",
+    "total_endpoints_scanned": 1,
+    "total_findings_count": 2,
+    "severity_breakdown": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 2,
+      "INFO": 0
+    },
+    "category_breakdown": {
+      "STACK_TRACE": 0,
+      "FILESYSTEM_PATH": 0,
+      "DATABASE_ERROR": 0,
+      "FRAMEWORK_VERSION": 0,
+      "RUNTIME_SERVER": 2
+    }
+  },
+  "endpoints": [
+    {
+      "url": "http://example.com",
+      "method": "GET",
+      "status_code": 405,
+      "aggregated_score": 3.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "LOW": 2
+      },
+      "findings": [
+        {
+          "category": "RUNTIME_SERVER",
+          "severity": "LOW",
+          "title": "Detailed Server Header Disclosed",
+          "detail": "The 'Server' header exposes specific server version information. (Value: cloudflare)",
+          "snippet": "server: cloudflare",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "RUNTIME_SERVER",
+          "severity": "LOW",
+          "title": "Detailed Server Header Disclosed",
+          "detail": "The 'Server' header exposes specific server version information. (Value: cloudflare)",
+          "snippet": "server: cloudflare",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+    }
+  ]
+}
