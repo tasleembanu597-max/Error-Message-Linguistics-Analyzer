@@ -1,0 +1,2 @@
+[console_scripts]
+emla = emla.cli:main

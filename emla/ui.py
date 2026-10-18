@@ -41,7 +41,7 @@ def print_banner(interactive: bool = False):
         banner_text.append("[Kali Linux Certified]", style="bold magenta")
         
         sub_text = "\n\n" + ("Interactive Mode Active. Type 'help' for command list, 'exit' or 'q' to quit." if interactive else "Automated Security Analysis Engine")
-        banner_text.append(sub_text, style="italic green" if interactive else "dim white")
+        banner_text.append(sub_text, style="bold green" if interactive else "dim white")
 
         panel = Panel(
             banner_text,
@@ -153,7 +153,7 @@ def render_scan_results(scan_result: ScanResult):
         f_table.add_column("Category", style="cyan", width=18)
         f_table.add_column("Finding Title", style="bold white", width=30)
         f_table.add_column("Endpoint", style="dim white")
-        f_table.add_column("Disclosed Snippet", style="italic gray")
+        f_table.add_column("Disclosed Snippet", style="dim white")
 
         for url, f in all_findings:
             sev_color = get_severity_color(f.severity.value if hasattr(f.severity, 'value') else str(f.severity))

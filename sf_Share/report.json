@@ -1,46 +1,45 @@
 {
   "scan_metadata": {
-    "target_url": "http://localhost",
-    "timestamp": "2026-09-22T15:34:05.123310+00:00",
-    "duration_seconds": 0.035,
+    "target_url": "http://target.com",
+    "timestamp": "2026-10-08T14:32:42.188732+00:00",
+    "duration_seconds": 442.716,
     "emla_version": "0.1.0",
     "configuration": {
       "max_depth": 3,
       "max_pages": 50,
-      "single_url": true,
+      "single_url": false,
       "timeout": 5.0
     }
   },
   "summary": {
-    "overall_score": 18.29,
-    "overall_severity_rating": "MEDIUM",
-    "total_endpoints_scanned": 1,
-    "total_findings_count": 4,
+    "overall_score": 14.87,
+    "overall_severity_rating": "LOW",
+    "total_endpoints_scanned": 47,
+    "total_findings_count": 140,
     "severity_breakdown": {
       "CRITICAL": 0,
-      "HIGH": 2,
+      "HIGH": 140,
       "MEDIUM": 0,
-      "LOW": 2,
+      "LOW": 0,
       "INFO": 0
     },
     "category_breakdown": {
       "STACK_TRACE": 0,
-      "FILESYSTEM_PATH": 2,
+      "FILESYSTEM_PATH": 140,
       "DATABASE_ERROR": 0,
       "FRAMEWORK_VERSION": 0,
-      "RUNTIME_SERVER": 2
+      "RUNTIME_SERVER": 0
     }
   },
   "endpoints": [
     {
-      "url": "http://localhost",
+      "url": "http://target.com",
       "method": "GET",
       "status_code": 200,
-      "aggregated_score": 18.29,
-      "findings_count": 4,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
       "findings_summary": {
-        "HIGH": 2,
-        "LOW": 2
+        "HIGH": 2
       },
       "findings": [
         {
@@ -48,15 +47,7 @@
           "severity": "HIGH",
           "title": "UNIX System File Path Disclosed",
           "detail": "Internal UNIX server filesystem path disclosed in response body.",
-          "snippet": "/var/www/html/index.html",
-          "confidence": "HIGH"
-        },
-        {
-          "category": "RUNTIME_SERVER",
-          "severity": "LOW",
-          "title": "Detailed Server Header Disclosed",
-          "detail": "The 'Server' header exposes specific server version information. (Value: Apache/2.4.68 (Debian))",
-          "snippet": "server: Apache/2.4.68 (Debian)",
+          "snippet": "/home/-/N-5xtvd",
           "confidence": "HIGH"
         },
         {
@@ -64,19 +55,1713 @@
           "severity": "HIGH",
           "title": "UNIX System File Path Disclosed",
           "detail": "Internal UNIX server filesystem path disclosed in response body.",
-          "snippet": "/var/www/html/index.html",
-          "confidence": "HIGH"
-        },
-        {
-          "category": "RUNTIME_SERVER",
-          "severity": "LOW",
-          "title": "Detailed Server Header Disclosed",
-          "detail": "The 'Server' header exposes specific server version information. (Value: Apache/2.4.68 (Debian))",
-          "snippet": "server: Apache/2.4.68 (Debian)",
+          "snippet": "/home/-/N-5xtvd",
           "confidence": "HIGH"
         }
       ],
-      "score_explanation": "Worst-Case Response Score: 18.29, Average Score: 18.29. Aggregated Formula: (0.70 * 18.29) + (0.30 * 18.29) = 18.29. Rating: MEDIUM"
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/s",
+      "method": "GET",
+      "status_code": 404,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/l/target-circle/-/N-pzno9",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/app/l/",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/app/l/",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/circlecard",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/app/layout-f1bd5434d66812fd.js",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/app/layout-f1bd5434d66812fd.js",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/l/target-circle-360/-/N-2rguk",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/app/l/",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/app/l/",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/gift-registry",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/weekly-ad",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/app/layout-7d94f997fc442181.js",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/app/layout-7d94f997fc442181.js",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/store-locator/find-stores",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/app/layout-73c748e9a2dad93a.js",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/app/layout-73c748e9a2dad93a.js",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/shop-all-categories/-/N-5xsxf?prehydrateClick=true",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/top-deals/-/N-4xw74?prehydrateClick=true",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/order-pickup/-/N-ng0a0?l1_nid=5xt1a&prehydrateClick=true",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/account?prehydrateClick=true",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/app/account/layout-e08d1cfad07cd15b.js",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/app/account/layout-e08d1cfad07cd15b.js",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/app/account/layout-e08d1cfad07cd15b.js",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/app/account/layout-e08d1cfad07cd15b.js",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/cart?prehydrateClick=true",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/pl/837669949",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/toy-deals/-/N-55fjf",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/pl/8675-2619047655245242?content_id=STORY-48350&marketing_id=8675-2619047655245242",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/b/apple/all-deals/-/N-5y3ejZakkos?type=products&content_id=STORY-48208",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-vj04y",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-vj04y",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-vj04y",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-vj04y",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/pl/122086563?content_id=STORY-47733",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/buy-2-get-1-on-books-music/-/N-p6hwu?content_id=STORY-47781",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/building-sets-blocks-deals/-/N-j1lc1ZakkosZ56h5n?type=products&content_id=STORY-48129",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/pl/8675-9892765762399?content_id=STORY-47806&marketing_id=8675-9892765762399",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/pl/669026422?content_id=STORY-47761",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/home-clearance/-/N-5tg3v?content_id=STORY-47904",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/halloween/-/N-5xt2o?content_id=STORY-48282",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/halloween-top-100/-/N-43v4x",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/halloween-candy/-/N-nzhon",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/all-halloween-costumes-holiday-shop/-/N-o28j6",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/halloween-outfits-holiday-shop/-/N-rrua1",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/halloween-decorations-holiday-shop/-/N-satpp",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/halloween-deals/-/N-oejgl",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/what-s-new/-/N-o9rnh",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/b/cat-jack/-/N-qqqgm?content_id=STORY-47801",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/p/beats-360-over-ear-headphones-with-performance-knit-cushions/-/A-1012863105?content_id=STORY-47947",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/b/kbb-by-kahlana/-/N-q643levo1q3?content_id=STORY-47962",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/b/dossier/-/N-q643le446iv?content_id=STORY-47821",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/health-wellbeing/-/N-sw90dZal25lfspkjoZka3doZysb4pZal25lfra2zwZrg5iyZ60oawZal1o3?type=products&content_id=STORY-47820",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/celebrate-latino-heritage-month/-/N-sxji7?content_id=STORY-46914",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/dia-de-muertos/-/N-fvppu?content_id=STORY-47058",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/christmas/-/N-5xt30?content_id=STORY-45892",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 14.1,
+      "findings_count": 4,
+      "findings_summary": {
+        "HIGH": 4
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 12.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 12.00) = 14.1. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/health-wellbeing/-/N-sw90d",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/beauty/-/N-55r1x",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/home/-/N-5xtvd",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/women/-/N-5xtd3",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/men/-/N-18y1l",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/kids/-/N-xcoz4",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/baby/-/N-5xtly",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
+    },
+    {
+      "url": "http://target.com/c/pets/-/N-5xt44",
+      "method": "GET",
+      "status_code": 200,
+      "aggregated_score": 15.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "HIGH": 2
+      },
+      "findings": [
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/home/-/N-5xtvd",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 15.0, Average Score: 15.00. Aggregated Formula: (0.70 * 15.0) + (0.30 * 15.00) = 15.0. Rating: LOW"
     }
   ]
 }

@@ -1,0 +1,1865 @@
+{
+  "batch_metadata": {
+    "timestamp": "2026-10-10T13:59:32.394412+00:00",
+    "duration_seconds": 1.233,
+    "total_targets": 4,
+    "emla_version": "0.1.0",
+    "configuration": {
+      "scan_type": "ACTIVE",
+      "scan_intensity": "MEDIUM",
+      "max_workers": 4,
+      "total_targets_requested": 4
+    }
+  },
+  "batch_summary": {
+    "overall_score": 44.57,
+    "overall_severity_rating": "HIGH",
+    "total_endpoints_scanned": 53,
+    "total_findings_count": 124,
+    "severity_breakdown": {
+      "CRITICAL": 12,
+      "HIGH": 12,
+      "MEDIUM": 0,
+      "LOW": 100,
+      "INFO": 0
+    }
+  },
+  "targets": [
+    {
+      "scan_metadata": {
+        "target_url": "http://127.0.0.1:53188",
+        "timestamp": "2026-10-10T13:59:32.394671+00:00",
+        "duration_seconds": 0.004,
+        "emla_version": "0.1.0",
+        "configuration": {
+          "max_depth": 3,
+          "max_pages": 50,
+          "single_url": false,
+          "scan_type": "ACTIVE",
+          "scan_intensity": "MEDIUM",
+          "timeout": 5.0
+        }
+      },
+      "summary": {
+        "overall_score": 0.0,
+        "overall_severity_rating": "NONE",
+        "total_endpoints_scanned": 1,
+        "total_findings_count": 0,
+        "severity_breakdown": {
+          "CRITICAL": 0,
+          "HIGH": 0,
+          "MEDIUM": 0,
+          "LOW": 0,
+          "INFO": 0
+        },
+        "category_breakdown": {
+          "STACK_TRACE": 0,
+          "FILESYSTEM_PATH": 0,
+          "DATABASE_ERROR": 0,
+          "FRAMEWORK_VERSION": 0,
+          "RUNTIME_SERVER": 0
+        }
+      },
+      "endpoints": [
+        {
+          "url": "http://127.0.0.1:53188",
+          "method": "GET",
+          "status_code": 500,
+          "aggregated_score": 0.0,
+          "findings_count": 0,
+          "findings_summary": {},
+          "findings": [],
+          "score_explanation": "Worst-Case Response Score: 0.0, Average Score: 0.00. Aggregated Formula: (0.70 * 0.0) + (0.30 * 0.00) = 0.0. Rating: NONE"
+        }
+      ]
+    },
+    {
+      "scan_metadata": {
+        "target_url": "http://127.0.0.1:53790",
+        "timestamp": "2026-10-10T13:59:32.395487+00:00",
+        "duration_seconds": 0.018,
+        "emla_version": "0.1.0",
+        "configuration": {
+          "max_depth": 3,
+          "max_pages": 50,
+          "single_url": false,
+          "scan_type": "ACTIVE",
+          "scan_intensity": "MEDIUM",
+          "timeout": 5.0
+        }
+      },
+      "summary": {
+        "overall_score": 0.0,
+        "overall_severity_rating": "NONE",
+        "total_endpoints_scanned": 1,
+        "total_findings_count": 0,
+        "severity_breakdown": {
+          "CRITICAL": 0,
+          "HIGH": 0,
+          "MEDIUM": 0,
+          "LOW": 0,
+          "INFO": 0
+        },
+        "category_breakdown": {
+          "STACK_TRACE": 0,
+          "FILESYSTEM_PATH": 0,
+          "DATABASE_ERROR": 0,
+          "FRAMEWORK_VERSION": 0,
+          "RUNTIME_SERVER": 0
+        }
+      },
+      "endpoints": [
+        {
+          "url": "http://127.0.0.1:53790",
+          "method": "GET",
+          "status_code": 500,
+          "aggregated_score": 0.0,
+          "findings_count": 0,
+          "findings_summary": {},
+          "findings": [],
+          "score_explanation": "Worst-Case Response Score: 0.0, Average Score: 0.00. Aggregated Formula: (0.70 * 0.0) + (0.30 * 0.00) = 0.0. Rating: NONE"
+        }
+      ]
+    },
+    {
+      "scan_metadata": {
+        "target_url": "http://127.0.0.1:22",
+        "timestamp": "2026-10-10T13:59:32.395262+00:00",
+        "duration_seconds": 0.237,
+        "emla_version": "0.1.0",
+        "configuration": {
+          "max_depth": 3,
+          "max_pages": 50,
+          "single_url": false,
+          "scan_type": "ACTIVE",
+          "scan_intensity": "MEDIUM",
+          "timeout": 5.0
+        }
+      },
+      "summary": {
+        "overall_score": 0.0,
+        "overall_severity_rating": "NONE",
+        "total_endpoints_scanned": 1,
+        "total_findings_count": 0,
+        "severity_breakdown": {
+          "CRITICAL": 0,
+          "HIGH": 0,
+          "MEDIUM": 0,
+          "LOW": 0,
+          "INFO": 0
+        },
+        "category_breakdown": {
+          "STACK_TRACE": 0,
+          "FILESYSTEM_PATH": 0,
+          "DATABASE_ERROR": 0,
+          "FRAMEWORK_VERSION": 0,
+          "RUNTIME_SERVER": 0
+        }
+      },
+      "endpoints": [
+        {
+          "url": "http://127.0.0.1:22",
+          "method": "GET",
+          "status_code": 500,
+          "aggregated_score": 0.0,
+          "findings_count": 0,
+          "findings_summary": {},
+          "findings": [],
+          "score_explanation": "Worst-Case Response Score: 0.0, Average Score: 0.00. Aggregated Formula: (0.70 * 0.0) + (0.30 * 0.00) = 0.0. Rating: NONE"
+        }
+      ]
+    },
+    {
+      "scan_metadata": {
+        "target_url": "http://127.0.0.1:8000",
+        "timestamp": "2026-10-10T13:59:32.395068+00:00",
+        "duration_seconds": 1.232,
+        "emla_version": "0.1.0",
+        "configuration": {
+          "max_depth": 3,
+          "max_pages": 50,
+          "single_url": false,
+          "scan_type": "ACTIVE",
+          "scan_intensity": "MEDIUM",
+          "timeout": 5.0
+        }
+      },
+      "summary": {
+        "overall_score": 44.57,
+        "overall_severity_rating": "HIGH",
+        "total_endpoints_scanned": 50,
+        "total_findings_count": 124,
+        "severity_breakdown": {
+          "CRITICAL": 12,
+          "HIGH": 12,
+          "MEDIUM": 0,
+          "LOW": 100,
+          "INFO": 0
+        },
+        "category_breakdown": {
+          "STACK_TRACE": 12,
+          "FILESYSTEM_PATH": 6,
+          "DATABASE_ERROR": 6,
+          "FRAMEWORK_VERSION": 0,
+          "RUNTIME_SERVER": 100
+        }
+      },
+      "endpoints": [
+        {
+          "url": "http://127.0.0.1:8000",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/.git",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/.pytest_cache",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/emla",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/emla.egg-info",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/emla_report.csv",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/emla_report.html",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 59.48,
+          "findings_count": 6,
+          "findings_summary": {
+            "CRITICAL": 2,
+            "HIGH": 2,
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "STACK_TRACE",
+              "severity": "CRITICAL",
+              "title": "Python Stack Trace Disclosed",
+              "detail": "Python traceback detected in response body.",
+              "snippet": "Traceback (most recent call last):",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "STACK_TRACE",
+              "severity": "CRITICAL",
+              "title": "PHP Exception / Stack Trace Disclosed",
+              "detail": "PHP error or uncaught exception stack trace disclosed.",
+              "snippet": "Fatal error: ",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "DATABASE_ERROR",
+              "severity": "HIGH",
+              "title": "MySQL / MariaDB Error Disclosed",
+              "detail": "MySQL database engine syntax error or message exposed.",
+              "snippet": "You have an error in your SQL syntax",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "FILESYSTEM_PATH",
+              "severity": "HIGH",
+              "title": "UNIX System File Path Disclosed",
+              "detail": "Internal UNIX server filesystem path disclosed in response body.",
+              "snippet": "/var/www/html/login.php",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 69.45, Average Score: 36.23. Aggregated Formula: (0.70 * 69.45) + (0.30 * 36.23) = 59.48. Rating: HIGH"
+        },
+        {
+          "url": "http://127.0.0.1:8000/emla_report.json",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 59.48,
+          "findings_count": 6,
+          "findings_summary": {
+            "CRITICAL": 2,
+            "HIGH": 2,
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "STACK_TRACE",
+              "severity": "CRITICAL",
+              "title": "Python Stack Trace Disclosed",
+              "detail": "Python traceback detected in response body.",
+              "snippet": "Traceback (most recent call last):",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "STACK_TRACE",
+              "severity": "CRITICAL",
+              "title": "PHP Exception / Stack Trace Disclosed",
+              "detail": "PHP error or uncaught exception stack trace disclosed.",
+              "snippet": "Fatal error: ",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "DATABASE_ERROR",
+              "severity": "HIGH",
+              "title": "MySQL / MariaDB Error Disclosed",
+              "detail": "MySQL database engine syntax error or message exposed.",
+              "snippet": "You have an error in your SQL syntax",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "FILESYSTEM_PATH",
+              "severity": "HIGH",
+              "title": "UNIX System File Path Disclosed",
+              "detail": "Internal UNIX server filesystem path disclosed in response body.",
+              "snippet": "/var/www/html/login.php",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 69.45, Average Score: 36.23. Aggregated Formula: (0.70 * 69.45) + (0.30 * 36.23) = 59.48. Rating: HIGH"
+        },
+        {
+          "url": "http://127.0.0.1:8000/emla_report.md",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 59.48,
+          "findings_count": 6,
+          "findings_summary": {
+            "CRITICAL": 2,
+            "HIGH": 2,
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "STACK_TRACE",
+              "severity": "CRITICAL",
+              "title": "Python Stack Trace Disclosed",
+              "detail": "Python traceback detected in response body.",
+              "snippet": "Traceback (most recent call last):",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "STACK_TRACE",
+              "severity": "CRITICAL",
+              "title": "PHP Exception / Stack Trace Disclosed",
+              "detail": "PHP error or uncaught exception stack trace disclosed.",
+              "snippet": "Fatal error: \n  ",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "DATABASE_ERROR",
+              "severity": "HIGH",
+              "title": "MySQL / MariaDB Error Disclosed",
+              "detail": "MySQL database engine syntax error or message exposed.",
+              "snippet": "You have an error in your SQL syntax",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "FILESYSTEM_PATH",
+              "severity": "HIGH",
+              "title": "UNIX System File Path Disclosed",
+              "detail": "Internal UNIX server filesystem path disclosed in response body.",
+              "snippet": "/var/www/html/login.php",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 69.45, Average Score: 36.23. Aggregated Formula: (0.70 * 69.45) + (0.30 * 36.23) = 59.48. Rating: HIGH"
+        },
+        {
+          "url": "http://127.0.0.1:8000/emla_report.txt",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/emla_report.xml",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 59.48,
+          "findings_count": 6,
+          "findings_summary": {
+            "CRITICAL": 2,
+            "HIGH": 2,
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "STACK_TRACE",
+              "severity": "CRITICAL",
+              "title": "Python Stack Trace Disclosed",
+              "detail": "Python traceback detected in response body.",
+              "snippet": "Traceback (most recent call last):",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "STACK_TRACE",
+              "severity": "CRITICAL",
+              "title": "PHP Exception / Stack Trace Disclosed",
+              "detail": "PHP error or uncaught exception stack trace disclosed.",
+              "snippet": "Fatal error: ",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "DATABASE_ERROR",
+              "severity": "HIGH",
+              "title": "MySQL / MariaDB Error Disclosed",
+              "detail": "MySQL database engine syntax error or message exposed.",
+              "snippet": "You have an error in your SQL syntax",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "FILESYSTEM_PATH",
+              "severity": "HIGH",
+              "title": "UNIX System File Path Disclosed",
+              "detail": "Internal UNIX server filesystem path disclosed in response body.",
+              "snippet": "/var/www/html/login.php",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 69.45, Average Score: 36.23. Aggregated Formula: (0.70 * 69.45) + (0.30 * 36.23) = 59.48. Rating: HIGH"
+        },
+        {
+          "url": "http://127.0.0.1:8000/generate_e2e_report.py",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/README.md",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/report.html",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 59.48,
+          "findings_count": 6,
+          "findings_summary": {
+            "CRITICAL": 2,
+            "HIGH": 2,
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "STACK_TRACE",
+              "severity": "CRITICAL",
+              "title": "Python Stack Trace Disclosed",
+              "detail": "Python traceback detected in response body.",
+              "snippet": "Traceback (most recent call last):",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "STACK_TRACE",
+              "severity": "CRITICAL",
+              "title": "PHP Exception / Stack Trace Disclosed",
+              "detail": "PHP error or uncaught exception stack trace disclosed.",
+              "snippet": "Fatal error: ",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "DATABASE_ERROR",
+              "severity": "HIGH",
+              "title": "MySQL / MariaDB Error Disclosed",
+              "detail": "MySQL database engine syntax error or message exposed.",
+              "snippet": "You have an error in your SQL syntax",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "FILESYSTEM_PATH",
+              "severity": "HIGH",
+              "title": "UNIX System File Path Disclosed",
+              "detail": "Internal UNIX server filesystem path disclosed in response body.",
+              "snippet": "/var/www/html/login.php",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 69.45, Average Score: 36.23. Aggregated Formula: (0.70 * 69.45) + (0.30 * 36.23) = 59.48. Rating: HIGH"
+        },
+        {
+          "url": "http://127.0.0.1:8000/report.json",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 59.48,
+          "findings_count": 6,
+          "findings_summary": {
+            "CRITICAL": 2,
+            "HIGH": 2,
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "STACK_TRACE",
+              "severity": "CRITICAL",
+              "title": "Python Stack Trace Disclosed",
+              "detail": "Python traceback detected in response body.",
+              "snippet": "Traceback (most recent call last):",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "STACK_TRACE",
+              "severity": "CRITICAL",
+              "title": "PHP Exception / Stack Trace Disclosed",
+              "detail": "PHP error or uncaught exception stack trace disclosed.",
+              "snippet": "Fatal error: ",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "DATABASE_ERROR",
+              "severity": "HIGH",
+              "title": "MySQL / MariaDB Error Disclosed",
+              "detail": "MySQL database engine syntax error or message exposed.",
+              "snippet": "You have an error in your SQL syntax",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "FILESYSTEM_PATH",
+              "severity": "HIGH",
+              "title": "UNIX System File Path Disclosed",
+              "detail": "Internal UNIX server filesystem path disclosed in response body.",
+              "snippet": "/var/www/html/login.php",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 69.45, Average Score: 36.23. Aggregated Formula: (0.70 * 69.45) + (0.30 * 36.23) = 59.48. Rating: HIGH"
+        },
+        {
+          "url": "http://127.0.0.1:8000/requirements.txt",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/run_tests.ipynb",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/setup.py",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/sf_Share",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/tests",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/venv",
+          "method": "GET",
+          "status_code": 200,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/COMMIT_EDITMSG",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/config",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/description",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/HEAD",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/hooks",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/index",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/info",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/logs",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/objects",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/refs",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/.gitignore",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/CACHEDIR.TAG",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/v",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/__init__.py",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/__pycache__",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/analyzer.py",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/cli.py",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/crawler.py",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/engine.py",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/models.py",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/reporter.py",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/scoring.py",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/trigger.py",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/ui.py",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/dependency_links.txt",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/entry_points.txt",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/PKG-INFO",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/requires.txt",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        },
+        {
+          "url": "http://127.0.0.1:8000/SOURCES.txt",
+          "method": "GET",
+          "status_code": 404,
+          "aggregated_score": 3.0,
+          "findings_count": 2,
+          "findings_summary": {
+            "LOW": 2
+          },
+          "findings": [
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            },
+            {
+              "category": "RUNTIME_SERVER",
+              "severity": "LOW",
+              "title": "Detailed Server Header Disclosed",
+              "detail": "The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)",
+              "snippet": "server: SimpleHTTP/0.6 Python/3.13.12",
+              "confidence": "HIGH"
+            }
+          ],
+          "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+        }
+      ]
+    }
+  ]
+}

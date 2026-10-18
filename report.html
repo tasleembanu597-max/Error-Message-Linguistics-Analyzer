@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMLA Security Analysis Report</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-blue: #38bdf8;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --border-color: #334155;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.5);
+        }
+        .header h1 {
+            margin: 0 0 10px 0;
+            color: var(--accent-blue);
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .metric-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border-color);
+            padding: 16px;
+            border-radius: 8px;
+        }
+        .metric-card .label {
+            font-size: 13px;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .metric-card .value {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 6px;
+        }
+        .section-title {
+            font-size: 20px;
+            margin: 30px 0 15px 0;
+            color: var(--accent-blue);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+        .endpoint-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .endpoint-title {
+            background: #0f172a;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .method-badge {
+            background: #0284c7;
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .ep-url {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 500;
+            word-break: break-all;
+            flex-grow: 1;
+        }
+        .ep-url:hover { color: var(--accent-blue); }
+        .status, .score {
+            font-size: 14px;
+            color: var(--text-dim);
+        }
+        .findings-container {
+            padding: 20px;
+        }
+        .finding-card {
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 12px;
+        }
+        .finding-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        .badge {
+            color: #fff;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+        .category {
+            font-size: 12px;
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+        .finding-detail {
+            font-size: 14px;
+            color: var(--text-dim);
+            margin: 5px 0 10px 0;
+        }
+        .snippet {
+            background: #090d16;
+            border: 1px solid #1e293b;
+            padding: 12px;
+            border-radius: 6px;
+            color: #38bdf8;
+            font-size: 13px;
+            overflow-x: auto;
+            margin: 0;
+        }
+        .clean-msg {
+            color: #10b981;
+            font-size: 14px;
+            margin: 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 13px;
+            color: var(--text-dim);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛡️ EMLA Security Analysis Report</h1>
+            <p style="color: var(--text-dim); margin: 0;">Targets Analyzed: <strong style="color: #fff">1 Target(s)</strong></p>
+            
+            <div class="meta-grid">
+                <div class="metric-card">
+                    <div class="label">Highest Risk Score</div>
+                    <div class="value" style="color: #f59e0b">36.2 / 100</div>
+                </div>
+                <div class="metric-card">
+                    <div class="label">Severity Rating</div>
+                    <div class="value" style="color: #f59e0b">MEDIUM</div>
+                </div>
+                <div class="metric-card">
+                    <div class="label">Endpoints Scanned</div>
+                    <div class="value">4</div>
+                </div>
+                <div class="metric-card">
+                    <div class="label">Total Findings</div>
+                    <div class="value" style="color: #ef4444">20</div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">🎯 Target: http://127.0.0.1:8888 (Score: 36.2 - MEDIUM)</h2>
+                <div class="endpoint-card">
+                    <div class="endpoint-title">
+                        <span class="method-badge">GET</span>
+                        <a href="http://127.0.0.1:8888" target="_blank" class="ep-url">http://127.0.0.1:8888</a>
+                        <span class="status">Status: 200</span>
+                        <span class="score">Score: 3.0</span>
+                    </div>
+                    <div class="findings-container">
+                        
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#3b82f6">LOW</span>
+                            <span class="category">RUNTIME_SERVER</span>
+                            <strong>Detailed Server Header Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">The &#x27;Server&#x27; header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)</p>
+                        <pre class="snippet"><code>server: BaseHTTP/0.6 Python/3.13.12</code></pre>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#3b82f6">LOW</span>
+                            <span class="category">RUNTIME_SERVER</span>
+                            <strong>Detailed Server Header Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">The &#x27;Server&#x27; header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)</p>
+                        <pre class="snippet"><code>server: BaseHTTP/0.6 Python/3.13.12</code></pre>
+                    </div>
+                    
+                    </div>
+                </div>
+                
+                <div class="endpoint-card">
+                    <div class="endpoint-title">
+                        <span class="method-badge">POST</span>
+                        <a href="http://127.0.0.1:8888/login" target="_blank" class="ep-url">http://127.0.0.1:8888/login</a>
+                        <span class="status">Status: 200</span>
+                        <span class="score">Score: 40.6</span>
+                    </div>
+                    <div class="findings-container">
+                        
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#3b82f6">LOW</span>
+                            <span class="category">RUNTIME_SERVER</span>
+                            <strong>Detailed Server Header Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">The &#x27;Server&#x27; header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)</p>
+                        <pre class="snippet"><code>server: BaseHTTP/0.6 Python/3.13.12</code></pre>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#ef4444">CRITICAL</span>
+                            <span class="category">STACK_TRACE</span>
+                            <strong>PHP Exception / Stack Trace Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">PHP error or uncaught exception stack trace disclosed.</p>
+                        <pre class="snippet"><code>Fatal error: </code></pre>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#ef4444">HIGH</span>
+                            <span class="category">FILESYSTEM_PATH</span>
+                            <strong>UNIX System File Path Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">Internal UNIX server filesystem path disclosed in response body.</p>
+                        <pre class="snippet"><code>/var/www/html/login.php</code></pre>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#3b82f6">LOW</span>
+                            <span class="category">RUNTIME_SERVER</span>
+                            <strong>Detailed Server Header Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">The &#x27;Server&#x27; header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)</p>
+                        <pre class="snippet"><code>server: BaseHTTP/0.6 Python/3.13.12</code></pre>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#3b82f6">LOW</span>
+                            <span class="category">RUNTIME_SERVER</span>
+                            <strong>X-Powered-By Header Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">The &#x27;X-Powered-By&#x27; header exposes underlying technology software stack. (Value: PHP/7.4.3)</p>
+                        <pre class="snippet"><code>x-powered-by: PHP/7.4.3</code></pre>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#3b82f6">LOW</span>
+                            <span class="category">RUNTIME_SERVER</span>
+                            <strong>Detailed Server Header Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">The &#x27;Server&#x27; header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)</p>
+                        <pre class="snippet"><code>server: BaseHTTP/0.6 Python/3.13.12</code></pre>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#3b82f6">LOW</span>
+                            <span class="category">RUNTIME_SERVER</span>
+                            <strong>Detailed Server Header Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">The &#x27;Server&#x27; header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)</p>
+                        <pre class="snippet"><code>server: BaseHTTP/0.6 Python/3.13.12</code></pre>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#3b82f6">LOW</span>
+                            <span class="category">RUNTIME_SERVER</span>
+                            <strong>Detailed Server Header Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">The &#x27;Server&#x27; header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)</p>
+                        <pre class="snippet"><code>server: BaseHTTP/0.6 Python/3.13.12</code></pre>
+                    </div>
+                    
+                    </div>
+                </div>
+                
+                <div class="endpoint-card">
+                    <div class="endpoint-title">
+                        <span class="method-badge">GET</span>
+                        <a href="http://127.0.0.1:8888/about" target="_blank" class="ep-url">http://127.0.0.1:8888/about</a>
+                        <span class="status">Status: 200</span>
+                        <span class="score">Score: 3.0</span>
+                    </div>
+                    <div class="findings-container">
+                        
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#3b82f6">LOW</span>
+                            <span class="category">RUNTIME_SERVER</span>
+                            <strong>Detailed Server Header Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">The &#x27;Server&#x27; header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12, Apache/2.4.41 (Ubuntu))</p>
+                        <pre class="snippet"><code>server: BaseHTTP/0.6 Python/3.13.12, Apache/2.4.41 (Ubuntu)</code></pre>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#3b82f6">LOW</span>
+                            <span class="category">RUNTIME_SERVER</span>
+                            <strong>Detailed Server Header Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">The &#x27;Server&#x27; header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)</p>
+                        <pre class="snippet"><code>server: BaseHTTP/0.6 Python/3.13.12</code></pre>
+                    </div>
+                    
+                    </div>
+                </div>
+                
+                <div class="endpoint-card">
+                    <div class="endpoint-title">
+                        <span class="method-badge">GET</span>
+                        <a href="http://127.0.0.1:8888/search?q=test" target="_blank" class="ep-url">http://127.0.0.1:8888/search?q=test</a>
+                        <span class="status">Status: 200</span>
+                        <span class="score">Score: 42.2</span>
+                    </div>
+                    <div class="findings-container">
+                        
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#3b82f6">LOW</span>
+                            <span class="category">RUNTIME_SERVER</span>
+                            <strong>Detailed Server Header Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">The &#x27;Server&#x27; header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)</p>
+                        <pre class="snippet"><code>server: BaseHTTP/0.6 Python/3.13.12</code></pre>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#ef4444">CRITICAL</span>
+                            <span class="category">STACK_TRACE</span>
+                            <strong>Python Stack Trace Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">Python traceback detected in response body.</p>
+                        <pre class="snippet"><code>Traceback (most recent call last):</code></pre>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#ef4444">HIGH</span>
+                            <span class="category">FILESYSTEM_PATH</span>
+                            <strong>UNIX System File Path Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">Internal UNIX server filesystem path disclosed in response body.</p>
+                        <pre class="snippet"><code>/app/search.py</code></pre>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#3b82f6">LOW</span>
+                            <span class="category">RUNTIME_SERVER</span>
+                            <strong>Detailed Server Header Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">The &#x27;Server&#x27; header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)</p>
+                        <pre class="snippet"><code>server: BaseHTTP/0.6 Python/3.13.12</code></pre>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#3b82f6">LOW</span>
+                            <span class="category">RUNTIME_SERVER</span>
+                            <strong>Detailed Server Header Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">The &#x27;Server&#x27; header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)</p>
+                        <pre class="snippet"><code>server: BaseHTTP/0.6 Python/3.13.12</code></pre>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#ef4444">HIGH</span>
+                            <span class="category">DATABASE_ERROR</span>
+                            <strong>MySQL / MariaDB Error Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">MySQL database engine syntax error or message exposed.</p>
+                        <pre class="snippet"><code>You have an error in your SQL syntax</code></pre>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#3b82f6">LOW</span>
+                            <span class="category">RUNTIME_SERVER</span>
+                            <strong>Detailed Server Header Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">The &#x27;Server&#x27; header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)</p>
+                        <pre class="snippet"><code>server: BaseHTTP/0.6 Python/3.13.12</code></pre>
+                    </div>
+                    
+                    <div class="finding-card">
+                        <div class="finding-header">
+                            <span class="badge" style="background:#3b82f6">LOW</span>
+                            <span class="category">RUNTIME_SERVER</span>
+                            <strong>Detailed Server Header Disclosed</strong>
+                        </div>
+                        <p class="finding-detail">The &#x27;Server&#x27; header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)</p>
+                        <pre class="snippet"><code>server: BaseHTTP/0.6 Python/3.13.12</code></pre>
+                    </div>
+                    
+                    </div>
+                </div>
+                
+
+        <div class="footer">
+            Generated by Error Message Linguistics Analyzer (EMLA) v0.1.0 • 2026-10-10T13:59:34.656314+00:00
+        </div>
+    </div>
+</body>
+</html>

@@ -1,8 +1,8 @@
 {
   "scan_metadata": {
-    "target_url": "http://example.com",
-    "timestamp": "2026-09-30T14:53:50.454319+00:00",
-    "duration_seconds": 0.163,
+    "target_url": "http://127.0.0.1:8888",
+    "timestamp": "2026-10-18T12:11:41.975395+00:00",
+    "duration_seconds": 0.093,
     "emla_version": "0.1.0",
     "configuration": {
       "max_depth": 3,
@@ -12,28 +12,28 @@
     }
   },
   "summary": {
-    "overall_score": 3.0,
-    "overall_severity_rating": "LOW",
-    "total_endpoints_scanned": 1,
-    "total_findings_count": 2,
+    "overall_score": 36.23,
+    "overall_severity_rating": "MEDIUM",
+    "total_endpoints_scanned": 4,
+    "total_findings_count": 20,
     "severity_breakdown": {
-      "CRITICAL": 0,
-      "HIGH": 0,
+      "CRITICAL": 2,
+      "HIGH": 3,
       "MEDIUM": 0,
-      "LOW": 2,
+      "LOW": 15,
       "INFO": 0
     },
     "category_breakdown": {
-      "STACK_TRACE": 0,
-      "FILESYSTEM_PATH": 0,
-      "DATABASE_ERROR": 0,
+      "STACK_TRACE": 2,
+      "FILESYSTEM_PATH": 2,
+      "DATABASE_ERROR": 1,
       "FRAMEWORK_VERSION": 0,
-      "RUNTIME_SERVER": 2
+      "RUNTIME_SERVER": 15
     }
   },
   "endpoints": [
     {
-      "url": "http://example.com",
+      "url": "http://127.0.0.1:8888",
       "method": "GET",
       "status_code": 405,
       "aggregated_score": 3.0,
@@ -46,20 +46,207 @@
           "category": "RUNTIME_SERVER",
           "severity": "LOW",
           "title": "Detailed Server Header Disclosed",
-          "detail": "The 'Server' header exposes specific server version information. (Value: cloudflare)",
-          "snippet": "server: cloudflare",
+          "detail": "The 'Server' header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)",
+          "snippet": "server: BaseHTTP/0.6 Python/3.13.12",
           "confidence": "HIGH"
         },
         {
           "category": "RUNTIME_SERVER",
           "severity": "LOW",
           "title": "Detailed Server Header Disclosed",
-          "detail": "The 'Server' header exposes specific server version information. (Value: cloudflare)",
-          "snippet": "server: cloudflare",
+          "detail": "The 'Server' header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)",
+          "snippet": "server: BaseHTTP/0.6 Python/3.13.12",
           "confidence": "HIGH"
         }
       ],
       "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+    },
+    {
+      "url": "http://127.0.0.1:8888/login",
+      "method": "POST",
+      "status_code": 500,
+      "aggregated_score": 40.64,
+      "findings_count": 8,
+      "findings_summary": {
+        "CRITICAL": 1,
+        "HIGH": 1,
+        "LOW": 6
+      },
+      "findings": [
+        {
+          "category": "STACK_TRACE",
+          "severity": "CRITICAL",
+          "title": "PHP Exception / Stack Trace Disclosed",
+          "detail": "PHP error or uncaught exception stack trace disclosed.",
+          "snippet": "Fatal error: ",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/var/www/html/login.php",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "RUNTIME_SERVER",
+          "severity": "LOW",
+          "title": "Detailed Server Header Disclosed",
+          "detail": "The 'Server' header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)",
+          "snippet": "server: BaseHTTP/0.6 Python/3.13.12",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "RUNTIME_SERVER",
+          "severity": "LOW",
+          "title": "X-Powered-By Header Disclosed",
+          "detail": "The 'X-Powered-By' header exposes underlying technology software stack. (Value: PHP/7.4.3)",
+          "snippet": "x-powered-by: PHP/7.4.3",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "RUNTIME_SERVER",
+          "severity": "LOW",
+          "title": "Detailed Server Header Disclosed",
+          "detail": "The 'Server' header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)",
+          "snippet": "server: BaseHTTP/0.6 Python/3.13.12",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "RUNTIME_SERVER",
+          "severity": "LOW",
+          "title": "Detailed Server Header Disclosed",
+          "detail": "The 'Server' header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)",
+          "snippet": "server: BaseHTTP/0.6 Python/3.13.12",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "RUNTIME_SERVER",
+          "severity": "LOW",
+          "title": "Detailed Server Header Disclosed",
+          "detail": "The 'Server' header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)",
+          "snippet": "server: BaseHTTP/0.6 Python/3.13.12",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "RUNTIME_SERVER",
+          "severity": "LOW",
+          "title": "Detailed Server Header Disclosed",
+          "detail": "The 'Server' header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)",
+          "snippet": "server: BaseHTTP/0.6 Python/3.13.12",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 52.52, Average Score: 12.90. Aggregated Formula: (0.70 * 52.52) + (0.30 * 12.90) = 40.64. Rating: HIGH"
+    },
+    {
+      "url": "http://127.0.0.1:8888/about",
+      "method": "GET",
+      "status_code": 405,
+      "aggregated_score": 3.0,
+      "findings_count": 2,
+      "findings_summary": {
+        "LOW": 2
+      },
+      "findings": [
+        {
+          "category": "RUNTIME_SERVER",
+          "severity": "LOW",
+          "title": "Detailed Server Header Disclosed",
+          "detail": "The 'Server' header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)",
+          "snippet": "server: BaseHTTP/0.6 Python/3.13.12",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "RUNTIME_SERVER",
+          "severity": "LOW",
+          "title": "Detailed Server Header Disclosed",
+          "detail": "The 'Server' header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12, Apache/2.4.41 (Ubuntu))",
+          "snippet": "server: BaseHTTP/0.6 Python/3.13.12, Apache/2.4.41 (Ubuntu)",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 3.0, Average Score: 3.00. Aggregated Formula: (0.70 * 3.0) + (0.30 * 3.00) = 3.0. Rating: LOW"
+    },
+    {
+      "url": "http://127.0.0.1:8888/search?q=test",
+      "method": "GET",
+      "status_code": 500,
+      "aggregated_score": 42.24,
+      "findings_count": 8,
+      "findings_summary": {
+        "CRITICAL": 1,
+        "HIGH": 2,
+        "LOW": 5
+      },
+      "findings": [
+        {
+          "category": "STACK_TRACE",
+          "severity": "CRITICAL",
+          "title": "Python Stack Trace Disclosed",
+          "detail": "Python traceback detected in response body.",
+          "snippet": "Traceback (most recent call last):",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "FILESYSTEM_PATH",
+          "severity": "HIGH",
+          "title": "UNIX System File Path Disclosed",
+          "detail": "Internal UNIX server filesystem path disclosed in response body.",
+          "snippet": "/app/search.py",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "RUNTIME_SERVER",
+          "severity": "LOW",
+          "title": "Detailed Server Header Disclosed",
+          "detail": "The 'Server' header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)",
+          "snippet": "server: BaseHTTP/0.6 Python/3.13.12",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "RUNTIME_SERVER",
+          "severity": "LOW",
+          "title": "Detailed Server Header Disclosed",
+          "detail": "The 'Server' header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)",
+          "snippet": "server: BaseHTTP/0.6 Python/3.13.12",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "DATABASE_ERROR",
+          "severity": "HIGH",
+          "title": "MySQL / MariaDB Error Disclosed",
+          "detail": "MySQL database engine syntax error or message exposed.",
+          "snippet": "You have an error in your SQL syntax",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "RUNTIME_SERVER",
+          "severity": "LOW",
+          "title": "Detailed Server Header Disclosed",
+          "detail": "The 'Server' header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)",
+          "snippet": "server: BaseHTTP/0.6 Python/3.13.12",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "RUNTIME_SERVER",
+          "severity": "LOW",
+          "title": "Detailed Server Header Disclosed",
+          "detail": "The 'Server' header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)",
+          "snippet": "server: BaseHTTP/0.6 Python/3.13.12",
+          "confidence": "HIGH"
+        },
+        {
+          "category": "RUNTIME_SERVER",
+          "severity": "LOW",
+          "title": "Detailed Server Header Disclosed",
+          "detail": "The 'Server' header exposes specific server version information. (Value: BaseHTTP/0.6 Python/3.13.12)",
+          "snippet": "server: BaseHTTP/0.6 Python/3.13.12",
+          "confidence": "HIGH"
+        }
+      ],
+      "score_explanation": "Worst-Case Response Score: 52.52, Average Score: 18.26. Aggregated Formula: (0.70 * 52.52) + (0.30 * 18.26) = 42.24. Rating: HIGH"
     }
   ]
 }

@@ -1,0 +1,212 @@
+============================================================
+ EMLA SECURITY ANALYSIS SUMMARY REPORT (2026-10-10T13:59:32.394412+00:00)
+============================================================
+
+Target URL: http://127.0.0.1:53188
+Overall Risk Score: 0.0 / 100.0 (NONE)
+Total Endpoints Scanned: 1
+Total Findings: 0
+
+  [GET] http://127.0.0.1:53188 (Status: 500, Score: 0.0)
+
+--------------------------------------------------
+
+Target URL: http://127.0.0.1:53790
+Overall Risk Score: 0.0 / 100.0 (NONE)
+Total Endpoints Scanned: 1
+Total Findings: 0
+
+  [GET] http://127.0.0.1:53790 (Status: 500, Score: 0.0)
+
+--------------------------------------------------
+
+Target URL: http://127.0.0.1:22
+Overall Risk Score: 0.0 / 100.0 (NONE)
+Total Endpoints Scanned: 1
+Total Findings: 0
+
+  [GET] http://127.0.0.1:22 (Status: 500, Score: 0.0)
+
+--------------------------------------------------
+
+Target URL: http://127.0.0.1:8000
+Overall Risk Score: 44.6 / 100.0 (HIGH)
+Total Endpoints Scanned: 50
+Total Findings: 124
+
+  [GET] http://127.0.0.1:8000 (Status: 200, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/.git (Status: 200, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/.pytest_cache (Status: 200, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/emla (Status: 200, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/emla.egg-info (Status: 200, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/emla_report.csv (Status: 200, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/emla_report.html (Status: 200, Score: 59.5)
+    - [CRITICAL] Python Stack Trace Disclosed: Python traceback detected in response body.
+    - [CRITICAL] PHP Exception / Stack Trace Disclosed: PHP error or uncaught exception stack trace disclosed.
+    - [HIGH] MySQL / MariaDB Error Disclosed: MySQL database engine syntax error or message exposed.
+    - [HIGH] UNIX System File Path Disclosed: Internal UNIX server filesystem path disclosed in response body.
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/emla_report.json (Status: 200, Score: 59.5)
+    - [CRITICAL] Python Stack Trace Disclosed: Python traceback detected in response body.
+    - [CRITICAL] PHP Exception / Stack Trace Disclosed: PHP error or uncaught exception stack trace disclosed.
+    - [HIGH] MySQL / MariaDB Error Disclosed: MySQL database engine syntax error or message exposed.
+    - [HIGH] UNIX System File Path Disclosed: Internal UNIX server filesystem path disclosed in response body.
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/emla_report.md (Status: 200, Score: 59.5)
+    - [CRITICAL] Python Stack Trace Disclosed: Python traceback detected in response body.
+    - [CRITICAL] PHP Exception / Stack Trace Disclosed: PHP error or uncaught exception stack trace disclosed.
+    - [HIGH] MySQL / MariaDB Error Disclosed: MySQL database engine syntax error or message exposed.
+    - [HIGH] UNIX System File Path Disclosed: Internal UNIX server filesystem path disclosed in response body.
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/emla_report.txt (Status: 200, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/emla_report.xml (Status: 200, Score: 59.5)
+    - [CRITICAL] Python Stack Trace Disclosed: Python traceback detected in response body.
+    - [CRITICAL] PHP Exception / Stack Trace Disclosed: PHP error or uncaught exception stack trace disclosed.
+    - [HIGH] MySQL / MariaDB Error Disclosed: MySQL database engine syntax error or message exposed.
+    - [HIGH] UNIX System File Path Disclosed: Internal UNIX server filesystem path disclosed in response body.
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/generate_e2e_report.py (Status: 200, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/README.md (Status: 200, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/report.html (Status: 200, Score: 59.5)
+    - [CRITICAL] Python Stack Trace Disclosed: Python traceback detected in response body.
+    - [CRITICAL] PHP Exception / Stack Trace Disclosed: PHP error or uncaught exception stack trace disclosed.
+    - [HIGH] MySQL / MariaDB Error Disclosed: MySQL database engine syntax error or message exposed.
+    - [HIGH] UNIX System File Path Disclosed: Internal UNIX server filesystem path disclosed in response body.
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/report.json (Status: 200, Score: 59.5)
+    - [CRITICAL] Python Stack Trace Disclosed: Python traceback detected in response body.
+    - [CRITICAL] PHP Exception / Stack Trace Disclosed: PHP error or uncaught exception stack trace disclosed.
+    - [HIGH] MySQL / MariaDB Error Disclosed: MySQL database engine syntax error or message exposed.
+    - [HIGH] UNIX System File Path Disclosed: Internal UNIX server filesystem path disclosed in response body.
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/requirements.txt (Status: 200, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/run_tests.ipynb (Status: 200, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/setup.py (Status: 200, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/sf_Share (Status: 200, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/tests (Status: 200, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/venv (Status: 200, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/COMMIT_EDITMSG (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/config (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/description (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/HEAD (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/hooks (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/index (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/info (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/logs (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/objects (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/refs (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/.gitignore (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/CACHEDIR.TAG (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/v (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/__init__.py (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/__pycache__ (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/analyzer.py (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/cli.py (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/crawler.py (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/engine.py (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/models.py (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/reporter.py (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/scoring.py (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/trigger.py (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/ui.py (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/dependency_links.txt (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/entry_points.txt (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/PKG-INFO (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/requires.txt (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+  [GET] http://127.0.0.1:8000/SOURCES.txt (Status: 404, Score: 3.0)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+    - [LOW] Detailed Server Header Disclosed: The 'Server' header exposes specific server version information. (Value: SimpleHTTP/0.6 Python/3.13.12)
+
+--------------------------------------------------
